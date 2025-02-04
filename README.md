@@ -1,8 +1,8 @@
 # Культура разработки программного обеспечения с открытым исходным кодом
 
 ## Студенты, работающие в репозитории:
-- Артем Горев(qliquiz)
+- Артём Горев(qliquiz)
 - Максим Рогожиников
 
 ## Задания:
-1. Командная работа с ветками в github(Артём - https://github.com/mumok4/development-culture/tree/main/git_branches Максим - ).
+1. Командная работа с ветками в github(Выполнялась в разных командах. Артём - https://github.com/mumok4/development-culture/tree/main/git_branches ; Максим - ).
