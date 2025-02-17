@@ -1,6 +1,5 @@
 from fastapi.testclient import TestClient
 from server.server import app
- 
 
 client = TestClient(app)
 
@@ -113,5 +112,3 @@ def test_get_user_data_json():
     response = client.get("/data/nonexistent")
     assert response.status_code == 404
     assert response.json() == {"detail": "User not found"}
-
- 
