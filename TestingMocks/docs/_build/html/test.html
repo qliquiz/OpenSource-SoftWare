@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Tests Reference &#8212; TestingMocks 1.4 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=0ed52906"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="API Reference" href="api.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-tests.test_server">
+<span id="tests-reference"></span><h1>Tests Reference<a class="headerlink" href="#module-tests.test_server" title="Link to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_server.test_get_user_data">
+<span class="sig-prename descclassname"><span class="pre">tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_get_user_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server.test_get_user_data" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения данных пользователя.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_server.test_get_user_data_json">
+<span class="sig-prename descclassname"><span class="pre">tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_get_user_data_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server.test_get_user_data_json" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения данных пользователя в формате JSON.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_server.test_get_users">
+<span class="sig-prename descclassname"><span class="pre">tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_get_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server.test_get_users" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения списка зарегистрированных пользователей.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_server.test_register_user">
+<span class="sig-prename descclassname"><span class="pre">tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_register_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server.test_register_user" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование функционала регистрации пользователя.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.test_server.test_upload_file">
+<span class="sig-prename descclassname"><span class="pre">tests.test_server.</span></span><span class="sig-name descname"><span class="pre">test_upload_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server.test_upload_file" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование функционала загрузки файла для пользователя.</p>
+</dd></dl>
+
+<dl class="py class" id="module-tests.test_server_mock">
+<dt class="sig sig-object py" id="tests.test_server_mock.TestServer">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_server_mock.</span></span><span class="sig-name descname"><span class="pre">TestServer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server_mock.TestServer" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_server_mock.TestServer.test_get_user_data">
+<span class="sig-name descname"><span class="pre">test_get_user_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server_mock.TestServer.test_get_user_data" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения данных пользователя.</p>
+<p>Проверяет, что при отправке GET-запроса на эндпоинт /user/{username} 
+возвращается статус код 200 и данные пользователя.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_server_mock.TestServer.test_get_user_data_json">
+<span class="sig-name descname"><span class="pre">test_get_user_data_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server_mock.TestServer.test_get_user_data_json" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения данных пользователя в формате JSON.</p>
+<p>Проверяет, что при отправке GET-запроса на эндпоинт /data/{username} 
+возвращается статус код 200 и данные пользователя в формате JSON.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_server_mock.TestServer.test_get_users">
+<span class="sig-name descname"><span class="pre">test_get_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server_mock.TestServer.test_get_users" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения списка зарегистрированных пользователей.</p>
+<p>Проверяет, что при отправке GET-запроса на эндпоинт /users/ 
+возвращается статус код 200 и список пользователей, содержащий тестового пользователя.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_server_mock.TestServer.test_register_user">
+<span class="sig-name descname"><span class="pre">test_register_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server_mock.TestServer.test_register_user" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование регистрации нового пользователя.</p>
+<p>Проверяет, что при отправке POST-запроса на эндпоинт /register/ 
+с корректными данными, возвращается статус код 200 и сообщение об успешной регистрации.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_server_mock.TestServer.test_upload_file">
+<span class="sig-name descname"><span class="pre">test_upload_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_server_mock.TestServer.test_upload_file" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование загрузки файла для пользователя.</p>
+<p>Проверяет, что при отправке POST-запроса на эндпоинт /upload/{username} 
+с корректным файлом, возвращается статус код 200 и сообщение об успешной загрузке файла.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-tests.test_cli_mock">
+<dt class="sig sig-object py" id="tests.test_cli_mock.TestCLI">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_cli_mock.</span></span><span class="sig-name descname"><span class="pre">TestCLI</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_cli_mock.TestCLI" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_cli_mock.TestCLI.test_get_user_data">
+<span class="sig-name descname"><span class="pre">test_get_user_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mock_get</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_cli_mock.TestCLI.test_get_user_data" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения данных пользователя.</p>
+<p>Проверяет, что метод CLI.get_user_data корректно отправляет GET-запрос
+на сервер для получения данных конкретного пользователя.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_cli_mock.TestCLI.test_list_users">
+<span class="sig-name descname"><span class="pre">test_list_users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mock_get</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_cli_mock.TestCLI.test_list_users" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование получения списка пользователей.</p>
+<p>Проверяет, что метод CLI.list_users корректно отправляет GET-запрос
+на сервер для получения списка пользователей.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_cli_mock.TestCLI.test_register_user">
+<span class="sig-name descname"><span class="pre">test_register_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mock_post</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_cli_mock.TestCLI.test_register_user" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование регистрации пользователя.</p>
+<p>Проверяет, что метод CLI.register_user корректно отправляет POST-запрос
+на сервер для регистрации пользователя с заданными именем и паролем.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_cli_mock.TestCLI.test_upload_file">
+<span class="sig-name descname"><span class="pre">test_upload_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mock_post</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_cli_mock.TestCLI.test_upload_file" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование загрузки файла.</p>
+<p>Проверяет, что метод CLI.upload_file корректно отправляет POST-запрос
+на сервер для загрузки файла, если файл существует.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.test_cli_mock.TestCLI.test_upload_file_file_not_found">
+<span class="sig-name descname"><span class="pre">test_upload_file_file_not_found</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mock_post</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_cli_mock.TestCLI.test_upload_file_file_not_found" title="Link to this definition">¶</a></dt>
+<dd><p>Тестирование загрузки файла, если файл не найден.</p>
+<p>Проверяет, что метод CLI.upload_file не отправляет POST-запрос на сервер,
+если указанный файл не существует.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">TestingMocks</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tests Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tests.test_server.test_get_user_data"><code class="docutils literal notranslate"><span class="pre">test_get_user_data()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests.test_server.test_get_user_data_json"><code class="docutils literal notranslate"><span class="pre">test_get_user_data_json()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests.test_server.test_get_users"><code class="docutils literal notranslate"><span class="pre">test_get_users()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests.test_server.test_register_user"><code class="docutils literal notranslate"><span class="pre">test_register_user()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests.test_server.test_upload_file"><code class="docutils literal notranslate"><span class="pre">test_upload_file()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tests.test_server_mock.TestServer"><code class="docutils literal notranslate"><span class="pre">TestServer</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_server_mock.TestServer.test_get_user_data"><code class="docutils literal notranslate"><span class="pre">TestServer.test_get_user_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_server_mock.TestServer.test_get_user_data_json"><code class="docutils literal notranslate"><span class="pre">TestServer.test_get_user_data_json()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_server_mock.TestServer.test_get_users"><code class="docutils literal notranslate"><span class="pre">TestServer.test_get_users()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_server_mock.TestServer.test_register_user"><code class="docutils literal notranslate"><span class="pre">TestServer.test_register_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_server_mock.TestServer.test_upload_file"><code class="docutils literal notranslate"><span class="pre">TestServer.test_upload_file()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tests.test_cli_mock.TestCLI"><code class="docutils literal notranslate"><span class="pre">TestCLI</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_cli_mock.TestCLI.test_get_user_data"><code class="docutils literal notranslate"><span class="pre">TestCLI.test_get_user_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_cli_mock.TestCLI.test_list_users"><code class="docutils literal notranslate"><span class="pre">TestCLI.test_list_users()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_cli_mock.TestCLI.test_register_user"><code class="docutils literal notranslate"><span class="pre">TestCLI.test_register_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_cli_mock.TestCLI.test_upload_file"><code class="docutils literal notranslate"><span class="pre">TestCLI.test_upload_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests.test_cli_mock.TestCLI.test_upload_file_file_not_found"><code class="docutils literal notranslate"><span class="pre">TestCLI.test_upload_file_file_not_found()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="api.html" title="previous chapter">API Reference</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, MaximRogozhnikov.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.1</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/test.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
