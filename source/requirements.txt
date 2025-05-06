@@ -1,3 +1,11 @@
 sphinx
 sphinx-rtd-theme
 myst-parser
+fastapi==0.115.8
+pydantic==2.10.6
+questionary==2.1.0
+python-multipart==0.0.20
+uvicorn==0.34.0
+requests
+pytest
+httpx

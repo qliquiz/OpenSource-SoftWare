@@ -1,19 +1,24 @@
 # -- Project information -----------------------------------------------------
 
-project = 'ourProject'
-copyright = '2025, Artem Maksim'
-author = 'Artem Maksim'
+project = 'OpenSource SoftWare'
+copyright = '2025, Artem'
+author = 'Artem'
 
 # -- General configuration ---------------------------------------------------
 
-extensions = ["myst_parser"]
+extensions = [
+    "myst_parser",
+    "sphinx.ext.autodoc",
+    "sphinx.ext.napoleon",
+]
 
 templates_path = ['_templates']
 exclude_patterns = []
+autodoc_mock_imports = ["questionary", "fastapi"]
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath(".."))
+sys.path.insert(0, os.path.abspath("../TestingMocks"))
 
 language = 'ru'
 
